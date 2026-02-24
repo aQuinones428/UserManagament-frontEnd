@@ -1,0 +1,18 @@
+<h1>create-user</h1>
+    <mat-card style="width: 70%;">
+        <mat-card-content>
+            <form [formGroup]="createUserForm" style="display: flex;flex-direction: column; gap: 16px;width: 100%;" (ngSubmit)="createUser()">            
+                <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name" placeholder="Enter name">
+            </mat-form-field>
+    
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" placeholder="Enter email">
+            </mat-form-field>
+    
+            <button mat-raised-button color="primary" type="submit">Create User</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
